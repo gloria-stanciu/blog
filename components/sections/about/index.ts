@@ -1,0 +1,6 @@
+export { default as Hero } from './Hero'
+export { default as TechStack } from './TechStack'
+export { default as LatestProjects } from './LatestProjects'
+export { default as Skills } from './Skills'
+export { default as Interests } from './Interests'
+export { default as Footer } from './Footer'
