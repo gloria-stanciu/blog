@@ -16,8 +16,8 @@ export default function LatestProjects(props: { about: About }) {
 			</div>
 
 			<div className='space-x-4 pt-16 flex flex-row justify-start items-center'>
-				<Button title='Hire me' />
-				<Link title='Download CV' />
+				<Button title='Contact me' />
+				<Link title='Read my CV' url={props.about.cv} newTab={true} />
 			</div>
 		</div>
 	)

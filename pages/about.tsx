@@ -4,9 +4,9 @@ import {
 	TechStack,
 	LatestProjects,
 	Skills,
-	Footer,
 	Interests,
 } from '../components/sections/about'
+import { default as Footer } from '../components/sections/Footer'
 import { Header } from '../components/ui'
 import { About, getAbout } from '../helpers/get-about'
 

@@ -43,16 +43,6 @@ export default function Hero(props: { about: About }) {
 						xl:bottom-96 xl:scale-75 
 						'
 					/>
-					<img
-						src={props.about.decorations.branches}
-						className='absolute z-10
-						bottom-0 scale-75 right-28
-						sm:-bottom-8 sm:scale-50 sm:right-32
-						md:-bottom-16 md:right-52
-						lg:-bottom-20 lg:scale-75 lg:right-[22rem]
-						xl:-bottom-24 xl:right-[26rem]
-						'
-					/>
 				</div>
 				<div
 					className='flex flex-col content-start items-start 
@@ -80,7 +70,7 @@ export default function Hero(props: { about: About }) {
 						'
 					>
 						<Button title='Contact me' />
-						<Link title='Download CV' />
+						<Link title='Read my CV' url={props.about.cv} newTab={true} />
 					</div>
 				</div>
 			</div>

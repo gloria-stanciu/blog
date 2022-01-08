@@ -5,37 +5,38 @@ export async function getAbout(): Promise<About> {
 	const client = getGraphQLClient()
 	const result = await client.query({
 		query: gql`
-			query Data {
-				general(where: { id: "ckxm5cxb4jk820b52m9urrk3o" }) {
+			query About {
+				generals(where: { name: "about" }) {
 					data
 				}
 			}
 		`,
 	})
 
-	return result.data.general.data
+	return result.data.generals[0].data
 }
 
 export interface About {
+	cv: string
 	hero: Hero
 	contact: Contact[]
 	fullName: string
-	signature: string
 	interests: Interests
+	portfolio: Portfolio
+	signature: string
 	softSkills: SoftSkills
 	techSkills: TechSkills
-	portfolio: Portfolio
 	decorations: Decorations
 }
 
 export interface Contact {
-	name: string
+	logo: string
 	url: string
+	name: string
 }
 
 export interface Decorations {
 	cubeGrid: string
-	branches: string
 }
 
 export interface Hero {
@@ -45,9 +46,9 @@ export interface Hero {
 }
 
 export interface Interests {
-	sectionTitle: string
 	title: string
 	hobbies: Hobby[]
+	sectionTitle: string
 }
 
 export interface Hobby {
@@ -56,14 +57,14 @@ export interface Hobby {
 }
 
 export interface Portfolio {
-	sectionTitle: string
 	name: string
+	sectionTitle: string
 }
 
 export interface SoftSkills {
-	sectionTitle: string
 	title: string
 	skills: Skill[]
+	sectionTitle: string
 }
 
 export interface Skill {

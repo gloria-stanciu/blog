@@ -1,5 +1,5 @@
 import { About } from '../../../helpers/get-about'
-import { Button, Heading, Link, Project, SectionTitle, Skill } from '../../ui'
+import { Heading, SectionTitle, Skill } from '../../ui'
 
 export default function Skills(props: { about: About }) {
 	return (

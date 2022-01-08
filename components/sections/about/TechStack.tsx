@@ -6,8 +6,8 @@ export default function TechStack(props: { about: About }) {
 		<div
 			className='container mx-auto flex justify-between items-center space-y-16	
 		flex-col mt-24
-		sm:flex-row sm:mt-64 sm:space-y-0
-		md:mt-52
+		sm:flex-row sm:mt-64 sm:space-y-0 sm:space-x-8
+		md:mt-52 md:space-x-8
 		lg:mt-64
 		xl:mt-[33rem]'
 		>
@@ -37,7 +37,7 @@ export default function TechStack(props: { about: About }) {
 				xl:space-x-4 xl:pt-16'
 				>
 					<Button title='Contact me' />
-					<Link title='Download CV' />
+					<Link title='Read my CV' url={props.about.cv} newTab={true} />
 				</div>
 			</div>
 		</div>
