@@ -1,4 +1,5 @@
 import { About } from '../../../helpers/get-about'
+import Image from 'next/image'
 import { Heading, Link, ScrollButton, SectionTitle } from '../../ui'
 
 export default function TechStack(props: { about: About }) {
@@ -12,6 +13,7 @@ export default function TechStack(props: { about: About }) {
 		xl:mt-[33rem]'
 		>
 			<img
+				alt='A schema displaying the main tech skills: NodeJS, React, Amazon Web Services and PostgreSQL'
 				src={props.about.techSkills.image}
 				className='pr-4 w-10/12 sm:w-1/2 md:w-1/2 lg:w-1/3'
 			/>

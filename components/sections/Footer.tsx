@@ -11,7 +11,7 @@ export default function Footer(props: { about: About }) {
 							key={index}
 							className='flex flex-row items-center space-x-4'
 						>
-							<Image alt='' aria-hidden src={elem.logo} />
+							<img alt='' aria-hidden src={elem.logo} />
 							<a
 								href={elem.url}
 								target='_blank'
@@ -23,7 +23,7 @@ export default function Footer(props: { about: About }) {
 						</button>
 					))}
 				</div>
-				<Image alt='' aria-hidden src={props.about.signature} />
+				<img alt='' aria-hidden src={props.about.signature} />
 			</div>
 		</footer>
 	)

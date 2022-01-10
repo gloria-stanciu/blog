@@ -1,4 +1,5 @@
 import { Skill } from '../../helpers/get-about'
+import Image from 'next/image'
 
 const color: Colors = {
 	red: 'bg-red-400',
@@ -15,6 +16,7 @@ export default function SoftSkill(props: { data: Skill }) {
 			xl:w-1/4 xl:h-96 ${color[props.data.bgColor as keyof Colors]}`}
 		>
 			<img
+				alt={`Image displaying a soft skill: ${props.data.name}`}
 				src={props.data.image}
 				className='
 			w-2/3

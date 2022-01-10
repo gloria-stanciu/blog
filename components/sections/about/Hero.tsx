@@ -24,7 +24,7 @@ export default function Hero(props: { about: About }) {
 					xl:w-[38rem] xl:h-[45rem] xl:right-[8%]
 				'
 				>
-					<Image
+					<img
 						alt='Portrait of a lady with brown hair'
 						src={props.about.hero.image}
 						className='drop-shadow-2xl scale-75 z-20
@@ -35,7 +35,7 @@ export default function Hero(props: { about: About }) {
 						xl:-mb-40
 						'
 					/>
-					<Image
+					<img
 						alt=''
 						aria-hidden
 						src={props.about.decorations.cubeGrid}

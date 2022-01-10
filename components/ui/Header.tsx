@@ -71,7 +71,7 @@ export default function Header(props: { url: string }) {
 					<Menu />
 				</motion.button>
 
-				<Image alt='' aria-hidden src={props.url} />
+				<img alt='' aria-hidden src={props.url} />
 
 				<div className='justify-evenly w-[40%] hidden lg:flex'>
 					<MenuItems />

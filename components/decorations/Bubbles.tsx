@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MutableRefObject, useEffect, useRef } from 'react'
+import { useRef } from 'react'
 
 const item = {
 	hidden: { y: 20, opacity: 0 },
