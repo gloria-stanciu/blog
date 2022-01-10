@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image'
 import { Menu } from '../icons/Menu'
 
 import { motion } from 'framer-motion'
@@ -70,7 +71,7 @@ export default function Header(props: { url: string }) {
 					<Menu />
 				</motion.button>
 
-				<img src={props.url} />
+				<Image alt='' aria-hidden src={props.url} />
 
 				<div className='justify-evenly w-[40%] hidden lg:flex'>
 					<MenuItems />

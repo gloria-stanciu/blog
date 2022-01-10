@@ -13,6 +13,7 @@ export default function Link(props: {
 			'
 			href={props.url}
 			target={props.newTab ? '_blank' : undefined}
+			rel='noreferrer'
 		>
 			{props.title}
 		</a>

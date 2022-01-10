@@ -1,6 +1,7 @@
 import { About } from '../../../helpers/get-about'
 import { ScrollButton, Heading, Link } from '../../ui'
 import SectionTitle from '../../ui/SectionTitle'
+import Image from 'next/image'
 
 export default function Hero(props: { about: About }) {
 	return (
@@ -23,7 +24,8 @@ export default function Hero(props: { about: About }) {
 					xl:w-[38rem] xl:h-[45rem] xl:right-[8%]
 				'
 				>
-					<img
+					<Image
+						alt='Portrait of a lady with brown hair'
 						src={props.about.hero.image}
 						className='drop-shadow-2xl scale-75 z-20
 						-mb-[3rem]
@@ -33,7 +35,9 @@ export default function Hero(props: { about: About }) {
 						xl:-mb-40
 						'
 					/>
-					<img
+					<Image
+						alt=''
+						aria-hidden
 						src={props.about.decorations.cubeGrid}
 						className='absolute  
 						bottom-5 scale-[0.30] -right-[4.5rem]
