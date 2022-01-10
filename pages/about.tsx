@@ -16,7 +16,7 @@ const About: NextPage<{ about: About }> = ({ about }) => {
 			<Header url={about.signature} />
 			<Hero about={about} />
 			<TechStack about={about} />
-			<LatestProjects about={about} />
+			{/* <LatestProjects about={about} /> */}
 			<Skills about={about} />
 			<Interests about={about} />
 			<Footer about={about} />

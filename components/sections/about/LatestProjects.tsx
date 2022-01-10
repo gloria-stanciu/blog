@@ -1,5 +1,5 @@
 import { About } from '../../../helpers/get-about'
-import { Button, Heading, Link, Project, SectionTitle } from '../../ui'
+import { Heading, Link, Project, ScrollButton, SectionTitle } from '../../ui'
 
 export default function LatestProjects(props: { about: About }) {
 	return (
@@ -16,7 +16,7 @@ export default function LatestProjects(props: { about: About }) {
 			</div>
 
 			<div className='space-x-4 pt-16 flex flex-row justify-start items-center'>
-				<Button title='Contact me' />
+				<ScrollButton title='Contact me' />
 				<Link title='Read my CV' url={props.about.cv} newTab={true} />
 			</div>
 		</div>

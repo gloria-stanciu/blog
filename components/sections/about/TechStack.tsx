@@ -1,5 +1,5 @@
 import { About } from '../../../helpers/get-about'
-import { Button, Heading, Link, SectionTitle } from '../../ui'
+import { Heading, Link, ScrollButton, SectionTitle } from '../../ui'
 
 export default function TechStack(props: { about: About }) {
 	return (
@@ -36,7 +36,7 @@ export default function TechStack(props: { about: About }) {
 				lg:space-x-4 lg:pt-16
 				xl:space-x-4 xl:pt-16'
 				>
-					<Button title='Contact me' />
+					<ScrollButton title='Contact me' />
 					<Link title='Read my CV' url={props.about.cv} newTab={true} />
 				</div>
 			</div>

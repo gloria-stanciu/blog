@@ -41,7 +41,7 @@ export default function Header(props: { url: string }) {
 			>
 				About
 			</motion.a>
-			<motion.a
+			{/* <motion.a
 				variants={variants}
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.95 }}
@@ -54,7 +54,7 @@ export default function Header(props: { url: string }) {
 				whileTap={{ scale: 0.95 }}
 			>
 				Posts
-			</motion.a>
+			</motion.a> */}
 		</>
 	)
 
@@ -72,14 +72,14 @@ export default function Header(props: { url: string }) {
 
 				<img src={props.url} />
 
-				<div className='justify-between w-[40%] hidden lg:flex'>
+				<div className='justify-evenly w-[40%] hidden lg:flex'>
 					<MenuItems />
 				</div>
 
 				{open ? (
 					<div
-						className='flex flex-col space-y-4 bg-stone-100 text-stone-800 rounded-md absolute 
-							top-full p-4 justify-between w-fit
+						className='flex flex-col space-y-6 bg-stone-100 text-stone-800 rounded-md absolute 
+							top-full p-6 w-1/4 justify-between
 							text-sm
 							sm:text-sm
 							md:text-base

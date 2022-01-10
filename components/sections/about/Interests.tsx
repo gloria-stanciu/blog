@@ -1,5 +1,5 @@
 import { About } from '../../../helpers/get-about'
-import { Button, Heading, Hobby, Link, SectionTitle } from '../../ui'
+import { Heading, Hobby, Link, ScrollButton, SectionTitle } from '../../ui'
 
 export default function Interests(props: { about: About }) {
 	return (
@@ -33,7 +33,7 @@ export default function Interests(props: { about: About }) {
 				</div>
 			</div>
 			<div className='container mx-auto space-x-4 pt-16 flex flex-row justify-start items-center'>
-				<Button title='Contact me' />
+				<ScrollButton title='Contact me' />
 				<Link title='Read my CV' url={props.about.cv} newTab={true} />
 			</div>
 		</div>

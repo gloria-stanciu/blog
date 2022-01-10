@@ -1,5 +1,5 @@
 import { About } from '../../../helpers/get-about'
-import { Button, Heading, Link } from '../../ui'
+import { ScrollButton, Heading, Link } from '../../ui'
 import SectionTitle from '../../ui/SectionTitle'
 
 export default function Hero(props: { about: About }) {
@@ -69,7 +69,7 @@ export default function Hero(props: { about: About }) {
 						xl:space-x-4 xl:pt-16
 						'
 					>
-						<Button title='Contact me' />
+						<ScrollButton title='Contact me' />
 						<Link title='Read my CV' url={props.about.cv} newTab={true} />
 					</div>
 				</div>
