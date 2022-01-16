@@ -19,7 +19,7 @@ export default function Interests(props: { about: About }) {
 				<div className='container mx-auto relative'>
 					<div className='space-y-4 flex flex-col items-start'>
 						<SectionTitle text={props.about.interests.sectionTitle} />
-						<Heading title={props.about.interests.title} />
+						<Heading title={props.about.interests.title} color='text-red-700' />
 					</div>
 					<div
 						className='flex flex-row flex-wrap justify-between items-end
@@ -32,7 +32,7 @@ export default function Interests(props: { about: About }) {
 					</div>
 				</div>
 			</div>
-			<div className='container mx-auto space-x-4 pt-16 flex flex-row justify-start items-center'>
+			<div className='container mx-auto space-x-4 pt-16 mb-36 flex flex-row justify-start items-center'>
 				<ScrollButton title='Contact me' />
 				<Link title='Read my CV' url={props.about.cv} newTab={true} />
 			</div>

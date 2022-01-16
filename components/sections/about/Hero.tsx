@@ -57,7 +57,7 @@ export default function Hero(props: { about: About }) {
 					'
 				>
 					<SectionTitle text={props.about.hero.profession} />
-					<Heading title={props.about.fullName} />
+					<Heading title={props.about.fullName} color='text-red-700' />
 					<p
 						className='
 					text-sm

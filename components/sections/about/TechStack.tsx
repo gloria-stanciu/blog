@@ -24,7 +24,7 @@ export default function TechStack(props: { about: About }) {
 			'
 			>
 				<SectionTitle text={props.about.techSkills.sectionTitle} />
-				<Heading title={props.about.techSkills.title} />
+				<Heading title={props.about.techSkills.title} color='text-red-700' />
 				<p
 					className='
 					text-sm

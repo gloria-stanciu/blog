@@ -16,18 +16,21 @@ export default function Bubbles(props: { photoUrl: string }) {
 	const constraintsRef = useRef(null)
 
 	return (
-		<motion.div
-			className='relative w-1/2 flex items-center justify-center m-10 lg:m-0'
-			ref={constraintsRef}
-		>
-			<motion.img
-				className='cursor-pointer'
-				src={props.photoUrl}
+		<motion.div className='relative w-1/2 m-10 lg:m-0' ref={constraintsRef}>
+			<motion.div
+				className='flex justify-center'
 				variants={item}
 				custom={0.5}
 				drag
 				dragConstraints={constraintsRef}
-			/>
+			>
+				<motion.img
+					className='cursor-pointer'
+					src={props.photoUrl}
+					drag
+					dragConstraints={constraintsRef}
+				/>
+			</motion.div>
 			<motion.div
 				className='bg-stone-700 w-14 aspect-square rounded-full absolute cursor-pointer mix-blend-soft-light
         -left-28 top-24

@@ -1,7 +1,7 @@
 import { Menu } from '../icons/Menu'
 import { Link } from './index'
 
-export default function Project(props: { text: string }) {
+export default function LatestProjectCard(props: { text: string }) {
 	return (
 		<div
 			className='bg-white rounded-tl-3xl rounded-tr-lg rounded-br-3xl rounded-bl-lg 

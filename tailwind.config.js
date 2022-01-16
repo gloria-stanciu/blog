@@ -1,3 +1,9 @@
+const em = (px, base) => `${round(px / base)}em`
+const round = (num) =>
+	num
+		.toFixed(7)
+		.replace(/(\.[0-9]+?)0+$/, '$1')
+		.replace(/\.0$/, '')
 module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
@@ -29,5 +35,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 }

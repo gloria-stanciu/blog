@@ -6,7 +6,7 @@ export default function Skills(props: { about: About }) {
 		<div className='container mx-auto mt-48'>
 			<div className='mb-8 space-y-4'>
 				<SectionTitle text={props.about.softSkills.sectionTitle} />
-				<Heading title={props.about.softSkills.title} />
+				<Heading title={props.about.softSkills.title} color='text-red-700' />
 			</div>
 			<div
 				className='flex flex-col flex-wrap space-y-4	
